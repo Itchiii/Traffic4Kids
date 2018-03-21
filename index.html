@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Traffic 4 Kids</title>
+      <!-- Framework -->
+      <script src="resources/phaser.min.js"></script>
+      <!-- States -->
+      <script src="scripts/states/boot.js"></script>
+      <script src="scripts/states/intro.js"></script>
+      <script src="scripts/states/menu.js"></script>
+      <script src="scripts/states/load.js"></script>
+      <script src="scripts/states/level.js"></script>
+      <script src="scripts/states/selection.js"></script>
+      <script src="scripts/states/help.js"></script>
+      <!-- Classes -->
+      <script src="scripts/classes/buttons.js"></script>
+      <script src="scripts/classes/participant.js"></script>
+      <!-- Levels -->
+      <script src="scripts/levels.js"></script>
+      <!-- Helppages -->
+      <script src="scripts/signs.js"></script>
+      <!-- Phrases -->
+      <script src="scripts/phrases.js"></script>
+
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+        }
+
+        body {
+          background-color: #000000;
+        }
+        canvas {
+          margin: 0 auto;
+        }
+        @font-face{
+          font-family: 'Ampersand';
+          src: url('resources/fonts/ampersand.ttf') format('truetype');
+        }
+        @font-face{
+          font-family: 'Chalk';
+          src: url('resources/fonts/chalk.ttf') format('truetype');
+        }
+      </style>
+    </head>
+
+    <body>
+    <div style="font:72px Ampersand;"></div>
+    <div style="font:72px Chalk;"></div>
+    <script>
+        var game = new Phaser.Game(1440, 1080, Phaser.AUTO);
+            game.state.add("Boot", boot);
+    				game.state.add("Intro", intro);
+            game.state.add("Load", load);
+    				game.state.add("Menu", menu);
+            game.state.add("Level", level);
+            game.state.add("Selection", selection);
+            game.state.add("Help", help);
+
+    				game.state.start("Boot");
+        var Global = {
+          completed: false,
+          music: null,
+          player: null,
+          playlist: [],
+        };
+
+        var layer = {
+      		overlay: [],
+      		interface: [],
+      		world: []
+      	};
+    </script>
+    <p></p>
+    </body>
+</html>

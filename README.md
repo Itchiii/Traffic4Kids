@@ -1,6 +1,6 @@
 Dieses Lernspiel wurde, im Sommersemester 2016 (4. Semester), für das Modul Medienpsychologie und -didaktik des Studiengangs Medieninformatik an der TU-Dresden entwickelt.
 
-Das Spiel kann hier geöffnet werden: [Link](https://is63050.inf.tu-dresden.de/~pitklu/)
+Das Spiel kann hier geöffnet werden: [Link](https://itchiii.github.io/Traffic4Kids/)
 
 Entwickler: 
 * [Robbendebiene](https://github.com/Robbendebiene)
